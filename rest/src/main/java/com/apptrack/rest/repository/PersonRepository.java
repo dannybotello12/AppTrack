@@ -15,5 +15,6 @@ import com.apptrack.rest.model.Person;
 public interface PersonRepository extends  JpaRepository<Person, Long>, Serializable {
 	
 	List<Person> findByEmail(@Param("email") String email);
-
+	
+	
 }
